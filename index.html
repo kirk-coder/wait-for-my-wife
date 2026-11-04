@@ -24,13 +24,13 @@
   </div>
 
   <script>
-    const targetDate = new Date("February 22, 2026 11:00:00").getTime();
+    const targetDate = new Date("February 22, 2027 11:00:00").getTime();
     function updateCountdown() {
       const now = new Date().getTime();
       const difference = targetDate - now;
      
       if (difference <= 0) {
-        document.querySelector(".container").innerHTML = "<h1>The day has arrived123!</h1>";
+        document.querySelector(".container").innerHTML = "<h1>The day has arrived!</h1>";
         clearInterval(timerInterval);
         return;
       }
